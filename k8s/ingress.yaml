@@ -1,0 +1,13 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: pa11y-dashboard
+spec:
+  rules:
+  - host: pa11y-dashboard.eq-prod.fool.com
+    http:
+      paths:
+      - backend:
+          serviceName: web
+          servicePort: 80
+        path: /

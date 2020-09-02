@@ -1,0 +1,10 @@
+common:
+  notify:
+    targetMap:
+      default: !!com.boxboat.jenkins.library.notify.SlackJenkinsAppNotifyTarget
+        channel: "#siteops-docker"
+    successKeys: []
+    failureKeys:
+      - default
+    infoKeys:
+      - default
