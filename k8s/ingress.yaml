@@ -11,3 +11,11 @@ spec:
           serviceName: web
           servicePort: 80
         path: /
+
+  - host: pa11y-api.eq-prod.fool.com
+    http:
+      paths:
+      - backend:
+          serviceName: web
+          servicePort: 3000
+        path: /

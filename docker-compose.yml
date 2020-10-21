@@ -3,7 +3,7 @@ services:
   database:
     image: mongo
     volumes: 
-      - mongo-volume:/pa11ydata
+      - pa11y-mongo-volume:/pa11ydata
     restart: always
     ports:
       - "27017:27017"
@@ -16,6 +16,7 @@ services:
     # build: .
     ports:
       - "80:4000"
+      - "3000:3000"
     restart: always
 volumes:
-  mongo-volume:
+  pa11y-mongo-volume:
